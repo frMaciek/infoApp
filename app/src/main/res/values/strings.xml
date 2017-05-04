@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">infoApp</string>
+    <string name="title">Pokazy filmowe Koinonia</string>
+    <string name="motto">filmy, które zmieniają życie</string>
+    <string name="contact">Kontakt</string>
+    <string name="event_place">Aula bł. Jakuba. Franciszkańska 4, Kraków</string>
+    <string name="event_time">Każda III niedziela miesiąca, start 20:00</string>
+</resources>

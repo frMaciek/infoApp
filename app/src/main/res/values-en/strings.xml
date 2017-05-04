@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">infoApp</string>
+    <string name="contact">Contact</string>
+    <string name="motto">The movies which change your life</string>
+    <string name="title">Koinonia\'s movie screening</string>
+    <string name="event_time">Every third sunday at 8 p.m.</string>
+    <string name="event_place">bl. Jacob auditorium, Franiszkanska str.</string>
+</resources>

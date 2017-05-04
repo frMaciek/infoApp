@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_greetings_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.videocard.GreetingsCard">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/icon_image"
+        android:layout_alignTop="@+id/icon_image"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/icon_image"
+        android:background="#0032EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingLeft="80dp"
+        android:paddingTop="10dp"
+        android:text=" pokazy filmowe Koinonia"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/globe_icon_small" />
+
+    <ImageView
+        android:id="@+id/cinema_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/icon_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cinema_image" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cinema_image"
+        android:background="#650032EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingBottom="6dp"
+        android:paddingLeft="140dp"
+        android:paddingTop="6dp"
+        android:text="Kontakt"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/icon_phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/subtitle"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phonecall" />
+
+    <ImageView
+        android:id="@+id/icon_mail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/icon_phone"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mail_icon" />
+
+    <ImageView
+        android:id="@+id/icon_fb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/icon_mail"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fb_icon" />
+
+    <ImageView
+        android:id="@+id/icon_pointer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/icon_fb"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pointer" />
+
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_phone"
+        android:layout_alignTop="@id/icon_phone"
+        android:layout_below="@id/subtitle"
+        android:layout_toRightOf="@id/icon_phone"
+        android:background="#220032EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="14dp"
+        android:paddingLeft="145dp"
+        android:text="(0048) 514 105 044"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/mail_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_mail"
+        android:layout_alignTop="@+id/icon_mail"
+        android:layout_below="@id/phone_number"
+        android:layout_toRightOf="@id/icon_phone"
+        android:background="#330032EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="12dp"
+        android:paddingLeft="145dp"
+        android:text="wojciechowski.maciek[at]google.com"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/fb_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/icon_pointer"
+        android:layout_alignBottom="@+id/icon_fb"
+        android:layout_below="@id/mail_adress"
+        android:layout_toEndOf="@+id/icon_mail"
+        android:background="#220032EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="14dp"
+        android:text="www.facebook.com/wspolnotakoinonia"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/localisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_pointer"
+        android:layout_below="@+id/fb_adress"
+        android:layout_toRightOf="@id/icon_phone"
+        android:background="#330032EB"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:text="Aula Jakuba
+Franciszkanska 4, Krakow, Poland"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
