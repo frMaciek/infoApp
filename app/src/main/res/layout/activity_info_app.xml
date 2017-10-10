@@ -8,234 +8,83 @@
     tools:context="com.example.dell.infoapp">
 
     <ImageView
-        android:id="@+id/icon_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:alpha="0.50"
-        android:scaleType="centerInside"
+        android:id="@+id/main_logo_image"
+        style="@style/MainImageStyle"
         android:src="@drawable/background" />
 
     <ImageView
         android:id="@+id/icon_image"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="fitCenter"
+        style="@style/IconImageStyle"
         android:src="@drawable/globe_icon_small" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TitleStyle"
+        android:text="@string/title" />
 
     <ImageView
         android:id="@+id/cinema_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/icon_image"
-        android:alpha="0.95"
-        android:scaleType="centerCrop"
+        style="@style/CinemaImageStyle"
         android:src="@drawable/cinema_image" />
 
     <TextView
         android:id="@+id/subtitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/cinema_image"
-        android:layout_centerVertical="true"
-        android:background="#40d3d3d3"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingBottom="6dp"
-        android:paddingLeft="12dp"
-        android:paddingTop="6dp"
-        android:text="@string/contact"
-        android:textColor="#D3D3D3"
-        android:textSize="16sp"
-        android:textStyle="italic" />
+        style="@style/KontaktStyle"
+        android:text="@string/contact" />
 
     <ImageView
         android:id="@+id/icon_phone"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/cinema_image"
-        android:background="#ccffffff"
-        android:paddingBottom="16dp"
-        android:paddingLeft="8dp"
-
-        android:paddingTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/phonecall" />
+        style="@style/PhoneIconStyle"
+        android:layout_below="@+id/cinema_image" />
 
     <ImageView
         android:id="@+id/icon_mail"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_below="@id/icon_phone"
-        android:alpha="0.95"
-        android:background="#ccffffff"
-        android:paddingBottom="16dp"
-        android:paddingLeft="8dp"
-        android:paddingTop="16dp"
-        android:scaleType="centerCrop"
+        style="@style/MailIconStyle"
         android:src="@drawable/mail_icon" />
 
     <ImageView
         android:id="@+id/icon_fb"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/icon_mail"
-        android:alpha="0.95"
-        android:background="#ccffffff"
-        android:paddingBottom="16dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="16dp"
-        android:scaleType="centerCrop"
+        style="@style/FanpageIconStyle"
         android:src="@drawable/fb_icon" />
 
     <ImageView
         android:id="@+id/icon_pointer"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/icon_fb"
-        android:alpha="0.75"
-        android:background="#ccffffff"
-        android:paddingBottom="16dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="16dp"
-        android:scaleType="centerCrop"
+        style="@style/EventPlaceStyle"
         android:src="@drawable/pointer" />
-
 
     <ImageView
         android:id="@+id/icon_working_hours"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/icon_pointer"
-        android:alpha="0.95"
-        android:paddingBottom="16dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="16dp"
-        android:scaleType="centerCrop"
+        style="@style/EventTimeStyle"
         android:src="@drawable/working_hours" />
-
 
     <TextView
         android:id="@+id/phone_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/icon_phone"
-        android:layout_alignTop="@+id/icon_phone"
-        android:layout_below="@id/subtitle"
-        android:layout_toRightOf="@id/icon_phone"
-        android:background="#ccffffff"
-        android:fontFamily="sans-serif-smallcaps"
-        android:padding="12dp"
-        android:text="(0048) 123 456 789"
-        android:textColor="#333333"
-        android:textSize="12sp"
-        android:textStyle="bold" />
+        style="@style/PhoneNumberStyle"
+        android:text="@string/phone_nmbr" />
 
     <TextView
         android:id="@+id/mail_adress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/icon_mail"
-        android:layout_alignTop="@+id/icon_mail"
-        android:layout_below="@id/phone_number"
-        android:layout_toRightOf="@id/icon_phone"
-        android:background="#ccffffff"
-        android:fontFamily="sans-serif-smallcaps"
-        android:padding="12dp"
-        android:text="contact.email[at]email.com"
-        android:textColor="#333333"
-        android:textSize="12sp"
-        android:textStyle="bold" />
+        style="@style/MailAdressStyle"
+        android:text="@string/email_adress" />
 
     <TextView
         android:id="@+id/fb_adress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/icon_pointer"
-        android:layout_alignBottom="@+id/icon_fb"
-        android:layout_alignTop="@+id/icon_fb"
-        android:layout_below="@id/mail_adress"
-        android:layout_toEndOf="@+id/icon_mail"
-        android:background="#ccffffff"
-        android:fontFamily="sans-serif-smallcaps"
-        android:padding="12dp"
-        android:text="www.facebook.com/wspolnotakoinonia"
-        android:textColor="#333333"
-        android:textSize="12sp"
-        android:textStyle="bold" />
-
+        style="@style/FanpageStyle"
+        android:text="@string/fb_fanpage" />
 
     <TextView
         android:id="@+id/localisation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/icon_pointer"
-        android:layout_alignTop="@+id/icon_pointer"
-        android:layout_below="@+id/fb_adress"
-        android:layout_toRightOf="@id/icon_phone"
-        android:background="#ccffffff"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingLeft="12dp"
-        android:paddingTop="12dp"
-        android:text="@string/event_place"
-        android:textColor="#333333"
-        android:textSize="12dp"
-        android:textStyle="bold" />
+        style="@style/EventPlaceDescStyle"
+        android:text="@string/event_place" />
 
     <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/icon_image"
-        android:background="#0032EB"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingLeft="55dp"
-        android:paddingTop="12dp"
-        android:text="@string/title"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp"
-        android:textStyle="italic" />
+        android:id="@+id/event_time_desc"
+        style="@style/EventTimeDescStyle"
+        android:text="@string/event_time" />
 
     <TextView
         android:id="@+id/bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
-        android:layout_centerVertical="true"
-        android:background="#40000000"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingBottom="6dp"
-        android:paddingLeft="12dp"
-        android:paddingTop="6dp"
-        android:text="@string/motto"
-        android:textColor="#D3D3D3"
-        android:textSize="12sp"
-        android:textStyle="italic" />
-
-    <TextView
-        android:id="@+id/working_hours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/icon_working_hours"
-        android:layout_alignTop="@+id/icon_working_hours"
-        android:layout_below="@+id/po"
-        android:layout_toRightOf="@id/icon_phone"
-        android:background="#ccffffff"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingLeft="12dp"
-        android:paddingTop="14dp"
-        android:text="@string/event_time"
-        android:textColor="#333333"
-        android:textSize="12dp"
-        android:textStyle="bold" />
-
+        style="@style/SubtitleStyle"
+        android:text="@string/motto" />
 
 </RelativeLayout>

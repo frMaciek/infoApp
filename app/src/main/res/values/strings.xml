@@ -3,6 +3,17 @@
     <string name="title">Pokazy filmowe Koinonia</string>
     <string name="motto">filmy, które zmieniają życie</string>
     <string name="contact">Kontakt</string>
+    <string name="email_adress" translatable="false">contact.email[at]email.com</string>
+    <string name="phone_nmbr" translatable="false">0048 123 456 789</string>
+    <string name="fb_fanpage" translatable="false">www.facebook.com/wspolnotakoinonia</string>
     <string name="event_place">Aula bł. Jakuba. Franciszkańska 4, Kraków</string>
     <string name="event_time">Każda III niedziela miesiąca, start 20:00</string>
+    <string name="toast_event">Dodawanie wydarzenia do kalendarza</string>
+    <string name="toast_maps">Uruchamiam mapy</string>
+    <string name="toast_mail">Przygotowuję klienta email</string>
+    <string name="toast_browser">Otwieram przeglądarkę</string>
+    <string name="toast_phonecall">Tworzę połączenie</string>
+    <string name="call">Zadzwoń teraz</string>
+    <string name="cancel">Anuluj</string>
+    <string name="alert_dialog_msg">Czy chcesz teraz zadzwonić pod podany nr? (może się to wiązać z opłatami)</string>
 </resources>
